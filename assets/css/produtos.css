@@ -1,0 +1,55 @@
+.produtos__grupo {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2%;
+}
+.produtos__grupo-titulo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 2%;
+}
+.produtos__item {
+    width: 48%;
+    margin-left: 2%;
+    margin-bottom: 1rem;
+}
+.produtos__imagens {
+    width: 98% ;
+}
+.produtos__link {
+    color: var(--azul-padrao);
+    background: url(../imagens/seta.png) no-repeat 100% 25%; 
+    padding-right: 15px;
+}
+.produtos__link-item {
+    color: var(--azul-padrao);
+}
+.produtos__preco {
+    font-weight: 700;
+}
+.produtos__botao {
+    border: none;
+    color: var(--branco);
+    background-color: var(--azul-padrao);
+    padding: 0.8rem 1.5rem;
+}
+@media screen and (min-width: 768px) {
+    .produtos__imagens {
+        width: 100% ;
+    }
+    .produtos__item {
+        width: 18%;
+    }
+    .produtos__item:nth-last-child(1) {
+        display: none;
+    }
+}
+@media screen and (min-width: 1024px) {
+    .produtos__item {
+        width: 14.5%;
+    }
+    .produtos__item:nth-last-child(1) {
+        display: block;
+    }
+}

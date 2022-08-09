@@ -1,0 +1,51 @@
+.login {
+    background-color: var(--cinza-fundo);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 36%;
+    padding-bottom: 15px;
+}
+.login__label {
+    font-weight: 700;
+}
+.login__email {
+    border: none;
+    padding: 1rem;
+    border-bottom: 2px solid var(--cinza-linha);
+    margin-top: 0.3rem;
+}
+.login__senha {
+    border: none;
+    padding: 1rem;
+    border-bottom: 2px solid var(--cinza-linha);
+    margin-top: 0.2rem;
+}
+.login__botao {
+    border: none;
+    color: var(--branco);
+    background-color: var(--azul-padrao);
+    padding: 0.8rem 1.5rem;
+    margin-top: 0.2rem;
+}
+@media screen and (min-width: 768px) {
+    .login{
+        height: 50%;
+    }
+    .login__label{
+        font-size: 1.5rem;
+    }
+    .login__email{
+        width: 50%;
+        margin-top: 1rem;
+    }
+    .login__senha{
+        width: 50%;
+        margin-top: 1rem;
+    }
+    .login__botao{
+        width: 20%;
+        margin-top: 1rem;
+    }
+}

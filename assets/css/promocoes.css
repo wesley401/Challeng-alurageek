@@ -1,0 +1,37 @@
+.promocoes {
+    background: url(../imagens/imagemprincipal.png) no-repeat; 
+    background-size: cover;
+    color: var(--branco);
+    padding: 2rem 0.5rem 0.5rem 1rem;
+    margin-bottom: 1rem;
+}
+.promocoes__titulo {
+    font-size: 1.5rem;
+    margin: 0;
+}
+.promocoes__texto {
+    margin: 0;
+}
+.promocoes__botao {
+    border: none;
+    color: var(--branco);
+    background-color: var(--azul-padrao);
+    padding: 0.7rem 1rem;
+}
+@media screen and (min-width: 768px) {
+    .promocoes {
+        height: 20%;
+    }
+    .promocoes__titulo {
+        margin-top: 4rem;
+    }
+}
+@media screen and (min-width: 1024px) {
+    .promocoes {
+        height: 25%;
+    }
+    .promocoes__titulo {
+        font-size: 2rem;
+        margin-top: 6rem;
+    }
+}

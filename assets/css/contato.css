@@ -1,0 +1,78 @@
+.contato {
+    background-color: var(--azul-claro);
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+}
+.contato__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contato__comunica {
+    display: flex;
+    flex-direction: column;
+}
+.contato__link {
+    color: var(--fonte-cinza);
+    margin-top: 0.5rem;
+}
+.contato__label {
+    font-weight: 700;
+    font-size: large;
+}
+.contato__nome {
+    margin-top: 0.5rem;
+    padding: 0.8rem;
+    border: none;
+    border-radius: 5px;
+    border-bottom: solid 2px var(--cinza-linha);
+}
+.contato__descricao {
+    border: none;
+    margin: 0.5rem 0;
+    padding: 0.8rem;
+    border-radius: 5px;
+    border-bottom: solid 2px var(--cinza-linha);
+}
+.contato__botao {
+    border: none;
+    color: var(--branco);
+    background-color: var(--azul-padrao);
+    width: 50%;
+    padding: 0.6rem;
+}
+.contato__logo-alura{
+    color: var(--azul-padrao);
+    background: url("../imagens/controle.png") no-repeat center left;
+    background-size: 2rem;
+    font-weight: 700;
+    font-size: 2rem;
+    padding-left: 2.3rem;
+}
+.contato__logo-geek {
+    color: var(--fonte-cinza);
+}
+@media screen and (min-width: 768px) {
+    .contato {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .contato__item{
+        align-items: flex-start;
+    }
+    .contato__comunica{
+        width: 25rem;
+    }
+    .contato__label {
+        font-size: 2rem;
+    }
+    .contato__botao {
+        padding: 1.5rem;
+    }
+}
+@media screen and (min-width: 1024px) {
+    .contato__comunica{
+        width: 35rem;
+    }
+}

@@ -4,73 +4,89 @@
     flex-wrap: wrap;
     justify-content: space-between;
 }
-.navbar__logo-alura{
+
+.navbar__logo-alura {
     color: var(--azul-padrao);
     background: url("../imagens/controle.png") no-repeat;
     background-size: 2rem;
     font-weight: 700;
     font-size: 1.2rem;
-    margin-top: 1rem;
-    margin-left: 1rem;
+    margin: 1rem;
     padding-left: 2.3rem;
 }
+
 .navbar__logo-geek {
     color: var(--fonte-cinza);
 }
+
 .navbar__botao {
     background-color: white;
     border-color: var(--azul-padrao);
-    border-style:solid;
+    border-style: solid;
     color: var(--azul-padrao);
-    padding:0.2rem 1.5rem;
-    margin:1rem 0.5rem;
+    padding: 0.5rem 1rem;
+    margin: .5rem;
 }
+
 .navbar__pesquisa {
     background: url("../imagens/lupa.png") no-repeat center;
     border: none;
-    margin: 1rem;
+    margin: 0.7rem 1rem;
     width: 1.5rem;
     height: 1.5 rem;
+    outline: none;
 }
-.navbar__pesquisa:hover{
-        width: 15rem;
-        height: 2rem;
-        border-radius: 15px;
-        background-color: var(--cinza-claro);
-        background-position: right;
+
+.navbar__pesquisa:active {
+    width: 15rem;
+    height: 2rem;
+    border-radius: 15px;
+    background-color: var(--cinza-claro);
+    background-position: right;
 }
+
 .navbar__pesquisa::placeholder {
     visibility: hidden;
 }
+
 @media screen and (min-width: 768px) {
-    .navbar{
+    .navbar {
         justify-content: space-between;
     }
-    .navbar__botao{
+
+    .navbar__botao {
         order: 3;
+        margin: .5rem 2rem;
+        padding: 0.5rem 2rem;
     }
+
     .navbar__pesquisa {
-        width: 15rem;
-        height: 2rem;
+        width: 15em;
         border-radius: 15px;
         background-color: var(--cinza-claro);
         background-position: right;
-        margin-right: 35%;
     }
+
     .navbar__pesquisa::placeholder {
         visibility: visible;
     }
-    
+
 }
+
 @media screen and (min-width: 1024px) {
     .navbar {
-        font-size: 1.3rem;
+        font-size: 10px;
     }
+
     .navbar__pesquisa {
-        width: 25rem;
+        width: 20rem;
     }
-    .navbar__logo-alura{
+
+    .navbar__logo-alura {
         font-size: 1.5rem;
     }
-    .navbar__pesquisa:hover{width: 25rem;}
+
+    .navbar__pesquisa:hover {
+        width: 20rem;
+    }
 }

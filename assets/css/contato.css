@@ -12,6 +12,7 @@
 .contato__comunica {
     display: flex;
     flex-direction: column;
+    position: relative;
 }
 .contato__link {
     color: var(--fonte-cinza);
@@ -23,17 +24,31 @@
 }
 .contato__nome {
     margin-top: 0.5rem;
-    padding: 0.8rem;
+    padding: 1.5rem 0.8rem;
     border: none;
     border-radius: 5px;
     border-bottom: solid 2px var(--cinza-linha);
+    outline: none;
+}
+.contato__nome-span {
+    position: absolute;
+    top: 35px;
+    left: 10px;
+    opacity: .5;
 }
 .contato__descricao {
     border: none;
     margin: 0.5rem 0;
-    padding: 0.8rem;
+    padding: 2rem 0.8rem;
     border-radius: 5px;
     border-bottom: solid 2px var(--cinza-linha);
+    outline: none;
+}
+.contato__descricao-span {
+    position: absolute;
+    top: 115px;
+    left: 10px;
+    opacity: .5;
 }
 .contato__botao {
     border: none;
@@ -69,6 +84,12 @@
     }
     .contato__botao {
         padding: 1.5rem;
+    }
+    .contato__nome-span{
+        top: 50px;
+    }
+    .contato__descricao-span{
+        top: 130px;
     }
 }
 @media screen and (min-width: 1024px) {

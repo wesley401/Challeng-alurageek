@@ -1,0 +1,16 @@
+
+.produto__ativo{
+    display: flex;
+    flex-wrap: wrap;
+}
+.produto__texto-ativo {
+    max-width: 30%;
+    text-justify: auto;
+}
+
+@media screen and (min-width: 768px) {
+    .ativado {
+       width: 20%; 
+       margin: 0 5%;
+    }
+}

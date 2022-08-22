@@ -1,11 +1,10 @@
 .produtos {
     background-color:var(--cinza-fundo);
-    
+    padding: 2rem 0;
 }
 .produtos__item{
     position: relative;
 }
-
 .produtos__item-excluir{
     position: absolute;
     top: 6px;
